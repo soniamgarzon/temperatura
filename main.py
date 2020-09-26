@@ -1,6 +1,6 @@
 def on_forever():
     basic.show_number(input.temperature())
-    if input.temperature() > 25:
+    if input.temperature() >= 25 and input.temperature() <= 34:
         basic.show_number(input.temperature())
         basic.show_icon(IconNames.HAPPY)
         basic.pause(500)
